@@ -751,7 +751,20 @@
                 animationFrameId = null; // Stop animation
                 confettiCtx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height); // Clear canvas one last time
             }
-        }
+        }        
     </script>
+    
+<!-- Modal HTML -->
+<div id="confirmationModal" class="modal-overlay">
+  <div class="modal-content">
+    <h2 class="plex-subtitle mb-4">Confirm Your Plex Account Info</h2>
+    <p class="mb-4">Are you sure your Plex username and email are correct? We use this information to invite you.</p>
+    <div class="flex justify-center space-x-4">
+      <button id="confirmYesPlexAccountBtn" class="plex-button">Yes, Looks Good</button>
+      <button id="confirmNoPlexAccountBtn" class="plex-button-secondary">No, I'll Check Again</button>
+    </div>
+  </div>
+</div>
+    
 </body>
 </html>
