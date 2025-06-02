@@ -476,7 +476,7 @@
 
     <script>
         // --- Configuration ---
-        const YOUR_DISCORD_WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL_HERE'; // Replace with your actual Discord Webhook URL
+        const YOUR_DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1378899967334158396/OYDZedmWxkota0Ji8RZYPDuGv__48KvNmkmgj7eVxOF6QcB2gbGYj0cBTa_HaQ-eeb1y'; // Replace with your actual Discord Webhook URL
         const YOUR_BACKEND_ENDPOINT_HERE = 'YOUR_BACKEND_ENDPOINT_HERE/invite-plex-user'; // Replace if you have a backend
 
         // --- Footer Year ---
@@ -602,7 +602,7 @@
                     responseOk = response.ok;
                     if (!responseOk) throw new Error(responseData.message || `Server error: ${response.status}`);
 
-                } else if (YOUR_DISCORD_WEBHOOK_URL && !YOUR_DISCORD_WEBHOOK_URL.includes('YOUR_DISCORD_WEBHOOK_URL_HERE')) {
+                } else if (YOUR_DISCORD_WEBHOOK_URL && !YOUR_DISCORD_WEBHOOK_URL.includes('https://discord.com/api/webhooks/1378899967334158396/OYDZedmWxkota0Ji8RZYPDuGv__48KvNmkmgj7eVxOF6QcB2gbGYj0cBTa_HaQ-eeb1y')) {
                     // Option B: Fallback to Discord Webhook
                     const discordPayload = {
                         embeds: [{
