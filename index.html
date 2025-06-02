@@ -615,7 +615,7 @@
                     responseOk = response.ok;
                     if (!responseOk) throw new Error(responseData.message || `Server error: ${response.status}`);
 
-                } else if (YOUR_DISCORD_WEBHOOK_URL && !YOUR_DISCORD_WEBHOOK_URL.includes('https://discord.com/api/webhooks/1378899967334158396/OYDZedmWxkota0Ji8RZYPDuGv__48KvNmkmgj7eVxOF6QcB2gbGYj0cBTa_HaQ-eeb1y')) {
+                } else if (YOUR_DISCORD_WEBHOOK_URL) {
                     // Option B: Fallback to Discord Webhook
                     const discordPayload = {
                         embeds: [{
